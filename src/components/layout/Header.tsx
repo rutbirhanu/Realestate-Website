@@ -11,7 +11,7 @@ export const Header = () => {
                 </ul>
             </div>
             <div>
-                <button className="bg-blue-900 rounded-3xl px-4 py-1">Sign Up</button>
+                <button className="bg-black rounded-3xl px-5 py-[5px]">Sign Up</button>
             </div>
         </div>
     )
