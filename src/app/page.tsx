@@ -1,9 +1,42 @@
 import Image from "next/image";
+import houseImage from '../../public/modern_house.webp'
+import { Header } from "@/components/Header";
+import { ChipsComponent } from "@/components/ChipsComponent";
 
 export default function Home() {
   return (
-    <div className="w-screen h-screen">
-      <img src="https://images.squarespace-cdn.com/content/v1/65a8583b3f2bb32732bff587/fa5d488b-e385-4c3b-a80a-5b2a40ba968c/1897+Lilac+Ln-44.jpg" alt="real estate"  className="w-full h-full object-cover"/>
+    <div className="w-screen h-screen relative">
+      <div >
+        <Image src={houseImage} alt="modern_house" objectFit="cover" layout="fill" />
+      </div>
+      <div className="absolute inset-0 bg-black/40 flex flex-col justify-between">
+        <Header />
+        <div className="flex flex-col my-5 mx-5">
+          <div className="flex justify-between gap-16 items-center mb-8">
+            <h1 className="text-5xl">
+              🏡 Find Your Dream Home with Confidence
+            </h1>
+            <div>
+              <p>
+                Discover the perfect property that matches your lifestyle. Whether buying, selling, or renting
+                — we make real estate simple, fast, and stress-free.
+              </p>
+              <div className="flex gap-4 mt-1">
+                <ChipsComponent type="House" />
+                <ChipsComponent type="Apartment" />
+                <ChipsComponent type="Flats" />
+              </div>
+
+            </div>
+
+          </div>
+          <div className="bg-white/90 rounded-3xl mx-5 h-40">
+
+          </div>
+
+        </div>
+      </div>
     </div>
+
   );
 }
