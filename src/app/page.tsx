@@ -4,6 +4,7 @@ import { Header } from "@/components/layout/Header";
 import { ChipsComponent } from "@/components/ui/ChipsComponent";
 import { InputComponent } from "@/components/ui/InputComponent";
 import AboutSection from "@/components/sections/AboutSection";
+import { HouseComponent } from "@/components/ui/HouseComponent";
 
 export default function Home() {
   return (
@@ -62,7 +63,17 @@ export default function Home() {
 
           </div>
         </div>
-        <AboutSection/>
+
+        <div>
+          <AboutSection />
+          <div className="flex justify-evenly">
+            <HouseComponent numberOfBedrooms={2} numberoFBathrooms={1} location="Bole ,Addis Abeba" price="138,308,0" houseType="G+2 Villa House"/>
+            <HouseComponent numberOfBedrooms={2} numberoFBathrooms={1} location="Bole ,Addis Abeba" price="138,308,0" houseType="G+2 Villa House"/>
+            <HouseComponent numberOfBedrooms={2} numberoFBathrooms={1} location="Bole ,Addis Abeba" price="138,308,0" houseType="G+2 Villa House"/>
+            <HouseComponent numberOfBedrooms={2} numberoFBathrooms={1} location="Bole ,Addis Abeba" price="138,308,0" houseType="G+2 Villa House"/>
+          </div>
+
+        </div>
 
       </div>
     </div>
