@@ -13,7 +13,7 @@ type HouseComponentType = {
 export const HouseComponent = ({ numberoFBathrooms, numberOfBedrooms, price, houseType, image, location }: HouseComponentType) => {
     return (
         <div className='px-1 py-1 text-black flex flex-col justify-between gap-[5px]'>
-            <div className="w-65 h-70 rounded-2xl overflow-hidden relative">
+            <div className="w-60 h-65 rounded-2xl overflow-hidden relative mb-2">
                 <Image
                     src={house_1}
                     alt="house image"

@@ -12,25 +12,25 @@ export default function AboutSection() {
     const items = [
         {
             id: "1",
-            img: "https://picsum.photos/id/1015/600/900?grayscale",
+            img: "/g1_house.jpg",
             url: "https://example.com/one",
             height: 300,
         },
         {
             id: "2",
-            img: "https://picsum.photos/id/1011/600/750?grayscale",
+            img: "/apartment.jpg",
             url: "https://example.com/two",
             height: 130,
         },
         {
             id: "3",
-            img: "https://picsum.photos/id/1020/600/800?grayscale",
+            img: "/penthouse_1.webp",
             url: "https://example.com/three",
             height: 180,
         },
         {
             id: "4",
-            img: "https://picsum.photos/id/1015/600/900?grayscale",
+            img: "/small_villa.webp",
             url: "https://example.com/one",
             height: 300,
         },
@@ -49,18 +49,7 @@ export default function AboutSection() {
     ];
 
     return (
-        <div className="my-5 text-black">
-            <div className=" flex justify-evenly items-center my-10">
-                <StatsComponent stats="100%" achievements="Satisfaction Clients" />
-                <p className="font-light text-4xl text-gray-400">|</p>
-                <StatsComponent stats="2000" achievements="Property Rent" />
-                <p className="font-light text-4xl text-gray-400">|</p>
-                <StatsComponent stats="3000" achievements="Positive Review" />
-                <p className="font-light text-4xl text-gray-400">|</p>
-                <StatsComponent stats="700" achievements="Property Sell" />
-            </div>
-
-
+        <div className="my-5 text-black mt-40">
 
             <div className="border-[1px] border-gray-200 flex justify-between my-5 mx-10 items-center p-5 rounded-2xl gap-20 shadow-lg">
                 {/* <Image src={g1_house} alt="g+1 house" width={200} /> */}
@@ -80,7 +69,8 @@ export default function AboutSection() {
 
                 <p>
                     Do you want me to show you the best way to make this responsive (so the house image adjusts nicely across screen sizes)?
-                    Do you want me to show you the best way to make this responsive (so the house image adjusts nicely across screen sizes)?
+                </p>
+                <p>
                     Do you want me to show you the best way to make this responsive (so the house image adjusts nicely across screen sizes)?
                 </p>
             </div>
@@ -88,10 +78,8 @@ export default function AboutSection() {
             <div className="border-[1px] border-gray-200 flex justify-between my-5 mx-10 items-center p-5 rounded-2xl gap-20 shadow-lg">
                 <p>
                     Do you want me to show you the best way to make this responsive (so the house image adjusts nicely across screen sizes)?
-                    Do you want me to show you the best way to make this responsive (so the house image adjusts nicely across screen sizes)?
-                    Do you want me to show you the best way to make this responsive (so the house image adjusts nicely across screen sizes)?
                 </p>
-               <div className="w-full relative h-[160px]">
+                <div className="w-full relative h-[160px]">
                     <Masonry
                         items={items}
                         ease="power3.out"
@@ -104,7 +92,19 @@ export default function AboutSection() {
                         colorShiftOnHover={false}
                     />
                 </div>
+                <p>
+                    Do you want me to show you the best way to make this responsive (so the house image adjusts nicely across screen sizes)?
+                </p>
 
+            </div>
+            <div className=" flex justify-evenly items-center my-10 ">
+                <StatsComponent stats="100%" achievements="Satisfaction Clients" />
+                <p className="font-light text-4xl text-gray-400">|</p>
+                <StatsComponent stats="2000" achievements="Property Rent" />
+                <p className="font-light text-4xl text-gray-400">|</p>
+                <StatsComponent stats="3000" achievements="Positive Review" />
+                <p className="font-light text-4xl text-gray-400">|</p>
+                <StatsComponent stats="700" achievements="Property Sell" />
             </div>
 
         </div>

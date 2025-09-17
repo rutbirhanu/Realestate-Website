@@ -14,11 +14,11 @@ export default function Home() {
       <div className="w-screen h-screen">
         <Image src={houseImage} alt="modern_house" objectFit="cover" layout="fill" />
       </div>
-      <div className="absolute inset-0 bg-black/40 text-white">
-        <div className="flex flex-col justify-between h-screen">
+      <div className="absolute inset-0 bg-black/40 ">
+        <div className="flex flex-col justify-between h-screen text-white">
           <Header />
-          <div className="flex flex-col my-3 mx-5">
-            <div className="flex justify-between gap-16 items-center mb-5 mx-4">
+          <div className="flex flex-col my-1 mx-5">
+            <div className="flex justify-between gap-16 items-center mx-4 -mb-10">
               <h1 className="text-5xl leading-tight">
                 Find Your Dream Home with Confidence
               </h1>
@@ -36,7 +36,7 @@ export default function Home() {
               </div>
 
             </div>
-            <div className="bg-white/90 rounded-3xl mx-6 text-black px-5 py-5">
+            <div className="relative -bottom-20 bg-white rounded-3xl mx-6 text-black px-5 py-5 border border-gray-300">
               <div>
                 <p className="text-xl">Find the best place</p>
                 <div className="flex justify-evenly my-3">
@@ -67,7 +67,18 @@ export default function Home() {
         </div>
 
         <div>
+
           <AboutSection />
+          <h1 className="text-2xl font-bold text-black mb-5 mx-auto text-center mt-20">Premium Houses</h1>
+
+          <div className="flex justify-evenly">
+            <HouseComponent numberOfBedrooms={2} numberoFBathrooms={1} location="Bole ,Addis Abeba" price="138,308,0" houseType="G+2 Villa House" />
+            <HouseComponent numberOfBedrooms={2} numberoFBathrooms={1} location="Bole ,Addis Abeba" price="138,308,0" houseType="G+2 Villa House" />
+            <HouseComponent numberOfBedrooms={2} numberoFBathrooms={1} location="Bole ,Addis Abeba" price="138,308,0" houseType="G+2 Villa House" />
+            <HouseComponent numberOfBedrooms={2} numberoFBathrooms={1} location="Bole ,Addis Abeba" price="138,308,0" houseType="G+2 Villa House" />
+          </div>
+          <h1 className="text-2xl font-bold text-black mt-15 mb-5 mx-auto text-center ">Affordable Houses Options</h1>
+
           <div className="flex justify-evenly">
             <HouseComponent numberOfBedrooms={2} numberoFBathrooms={1} location="Bole ,Addis Abeba" price="138,308,0" houseType="G+2 Villa House" />
             <HouseComponent numberOfBedrooms={2} numberoFBathrooms={1} location="Bole ,Addis Abeba" price="138,308,0" houseType="G+2 Villa House" />
@@ -77,12 +88,17 @@ export default function Home() {
 
         </div>
 
+        <h1 className="text-3xl font-bold text-black my-10 mx-auto text-center mt-20">Frequently Asked Questions</h1>
         <div className="w-3/4 flex flex-col mx-auto my-10">
           <QuestionCardComponent question="What is the best way to find a property?" answer="The best way to find a property is to work with a real estate agent who knows the local market." />
           <QuestionCardComponent question="What is the best way to find a property?" answer="The best way to find a property is to work with a real estate agent who knows the local market." />
           <QuestionCardComponent question="What is the best way to find a property?" answer="The best way to find a property is to work with a real estate agent who knows the local market." />
+          <QuestionCardComponent question="What is the best way to find a property?" answer="The best way to find a property is to work with a real estate agent who knows the local market." />
+          <QuestionCardComponent question="What is the best way to find a property?" answer="The best way to find a property is to work with a real estate agent who knows the local market." />
         </div>
-        <ContactUsSection/>
+          <h1 className="text-2xl font-bold text-black my-10 mx-auto text-center mt-20">Contact Us</h1>
+
+        <ContactUsSection />
 
       </div>
     </div>
