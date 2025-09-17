@@ -5,6 +5,8 @@ import { ChipsComponent } from "@/components/ui/ChipsComponent";
 import { InputComponent } from "@/components/ui/InputComponent";
 import AboutSection from "@/components/sections/AboutSection";
 import { HouseComponent } from "@/components/ui/HouseComponent";
+import { QuestionCardComponent } from "@/components/ui/QuestionCardComponent";
+import { ContactUsSection } from "@/components/sections/ContactUsSection";
 
 export default function Home() {
   return (
@@ -67,13 +69,20 @@ export default function Home() {
         <div>
           <AboutSection />
           <div className="flex justify-evenly">
-            <HouseComponent numberOfBedrooms={2} numberoFBathrooms={1} location="Bole ,Addis Abeba" price="138,308,0" houseType="G+2 Villa House"/>
-            <HouseComponent numberOfBedrooms={2} numberoFBathrooms={1} location="Bole ,Addis Abeba" price="138,308,0" houseType="G+2 Villa House"/>
-            <HouseComponent numberOfBedrooms={2} numberoFBathrooms={1} location="Bole ,Addis Abeba" price="138,308,0" houseType="G+2 Villa House"/>
-            <HouseComponent numberOfBedrooms={2} numberoFBathrooms={1} location="Bole ,Addis Abeba" price="138,308,0" houseType="G+2 Villa House"/>
+            <HouseComponent numberOfBedrooms={2} numberoFBathrooms={1} location="Bole ,Addis Abeba" price="138,308,0" houseType="G+2 Villa House" />
+            <HouseComponent numberOfBedrooms={2} numberoFBathrooms={1} location="Bole ,Addis Abeba" price="138,308,0" houseType="G+2 Villa House" />
+            <HouseComponent numberOfBedrooms={2} numberoFBathrooms={1} location="Bole ,Addis Abeba" price="138,308,0" houseType="G+2 Villa House" />
+            <HouseComponent numberOfBedrooms={2} numberoFBathrooms={1} location="Bole ,Addis Abeba" price="138,308,0" houseType="G+2 Villa House" />
           </div>
 
         </div>
+
+        <div className="w-3/4 flex flex-col mx-auto my-10">
+          <QuestionCardComponent question="What is the best way to find a property?" answer="The best way to find a property is to work with a real estate agent who knows the local market." />
+          <QuestionCardComponent question="What is the best way to find a property?" answer="The best way to find a property is to work with a real estate agent who knows the local market." />
+          <QuestionCardComponent question="What is the best way to find a property?" answer="The best way to find a property is to work with a real estate agent who knows the local market." />
+        </div>
+        <ContactUsSection/>
 
       </div>
     </div>
