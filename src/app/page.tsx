@@ -7,6 +7,7 @@ import AboutSection from "@/components/sections/AboutSection";
 import { HouseComponent } from "@/components/ui/HouseComponent";
 import { QuestionCardComponent } from "@/components/ui/QuestionCardComponent";
 import { ContactUsSection } from "@/components/sections/ContactUsSection";
+import { Testimonialsection } from "@/components/sections/Testimonialsection";
 
 export default function Home() {
   return (
@@ -96,6 +97,8 @@ export default function Home() {
           <QuestionCardComponent question="What is the best way to find a property?" answer="The best way to find a property is to work with a real estate agent who knows the local market." />
           <QuestionCardComponent question="What is the best way to find a property?" answer="The best way to find a property is to work with a real estate agent who knows the local market." />
         </div>
+
+        <Testimonialsection/>
           <h1 className="text-2xl font-bold text-black my-10 mx-auto text-center mt-20">Contact Us</h1>
 
         <ContactUsSection />
