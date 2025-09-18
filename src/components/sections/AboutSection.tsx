@@ -51,52 +51,54 @@ export default function AboutSection() {
     return (
         <div className="my-5 text-black mt-40">
 
-            <div className="border-[1px] border-gray-200 flex justify-between my-5 mx-10 items-center p-5 rounded-2xl gap-20 shadow-lg">
-                {/* <Image src={g1_house} alt="g+1 house" width={200} /> */}
-                <div className="w-full relative h-[160px]">
-                    <Masonry
-                        items={items}
-                        ease="power3.out"
-                        duration={0.6}
-                        stagger={0.05}
-                        animateFrom="bottom"
-                        scaleOnHover={true}
-                        hoverScale={0.95}
-                        blurToFocus={true}
-                        colorShiftOnHover={false}
-                    />
+            <div className="border-[1px] border-gray-200  my-5 mx-10 p-2  rounded-2xl gap-10 shadow-lg">
+                <div className="flex justify-between items-center gap-20 p-5">
+                    <div className="w-full relative h-[160px]">
+                        <Masonry
+                            items={items}
+                            ease="power3.out"
+                            duration={0.6}
+                            stagger={0.05}
+                            animateFrom="bottom"
+                            scaleOnHover={true}
+                            hoverScale={0.95}
+                            blurToFocus={true}
+                            colorShiftOnHover={false}
+                        />
+                    </div>
+
+                    <p>
+                        Do you want me to show you the best way to make this responsive (so the house image adjusts nicely across screen sizes)?
+                    </p>
+                    <p>
+                        Do you want me to show you the best way to make this responsive (so the house image adjusts nicely across screen sizes)?
+                    </p>
                 </div>
 
-                <p>
-                    Do you want me to show you the best way to make this responsive (so the house image adjusts nicely across screen sizes)?
-                </p>
-                <p>
-                    Do you want me to show you the best way to make this responsive (so the house image adjusts nicely across screen sizes)?
-                </p>
-            </div>
+                <div className="flex justify-between my-5 mx-10 items-center p-5 rounded-2xl gap-20">
+                    <p>
+                        Do you want me to show you the best way to make this responsive (so the house image adjusts nicely across screen sizes)?
+                    </p>
+                    <div className="w-full relative h-[160px]">
+                        <Masonry
+                            items={items}
+                            ease="power3.out"
+                            duration={0.6}
+                            stagger={0.05}
+                            animateFrom="bottom"
+                            scaleOnHover={true}
+                            hoverScale={0.95}
+                            blurToFocus={true}
+                            colorShiftOnHover={false}
+                        />
+                    </div>
+                    <p>
+                        Do you want me to show you the best way to make this responsive (so the house image adjusts nicely across screen sizes)?
+                    </p>
 
-            <div className="border-[1px] border-gray-200 flex justify-between my-5 mx-10 items-center p-5 rounded-2xl gap-20 shadow-lg">
-                <p>
-                    Do you want me to show you the best way to make this responsive (so the house image adjusts nicely across screen sizes)?
-                </p>
-                <div className="w-full relative h-[160px]">
-                    <Masonry
-                        items={items}
-                        ease="power3.out"
-                        duration={0.6}
-                        stagger={0.05}
-                        animateFrom="bottom"
-                        scaleOnHover={true}
-                        hoverScale={0.95}
-                        blurToFocus={true}
-                        colorShiftOnHover={false}
-                    />
                 </div>
-                <p>
-                    Do you want me to show you the best way to make this responsive (so the house image adjusts nicely across screen sizes)?
-                </p>
-
             </div>
+
             <div className=" flex justify-evenly items-center my-10 ">
                 <StatsComponent stats="100%" achievements="Satisfaction Clients" />
                 <p className="font-light text-4xl text-gray-400">|</p>
@@ -108,6 +110,7 @@ export default function AboutSection() {
             </div>
 
         </div>
+
 
     )
 }

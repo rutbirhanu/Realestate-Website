@@ -1,3 +1,7 @@
+import { FaPhoneAlt } from "react-icons/fa"
+import { FaMapLocationDot } from "react-icons/fa6"
+import { MdEmail } from "react-icons/md"
+
 export const ContactUsSection = () => {
     return (
         <div className="text-black mx-10 my-5 p-5 border-2 border-gray-100 rounded-2xl">
@@ -7,16 +11,19 @@ export const ContactUsSection = () => {
                         Reach out
                     </h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quisquam itaque accusamus? Doloribus repudiandae nihil perspiciatis dolore quidem illum repellendus voluptatibus itaque aperiam, nostrum tempore. Ratione repellat perspiciatis velit voluptas.</p>
-                    <ul className="pl-5">
-                        <li><span className="inline-block ">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
-                                <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
-                            </svg>
-
+                    <ul className="pl-5 pt-5">
+                        <li className="flex gap-5 items-center"><span className="inline-block ">
+                            <MdEmail/>
                         </span> info@example.com</li>
-                        <li><a href="tel:+1234567890">+1 (234) 567-890</a></li>
-                        <li>123 Main St, Anytown, USA</li>
-
+                        <li className="flex gap-5 items-center py-2"><span>
+                            <FaPhoneAlt />
+                        </span>
+                            +1 (234) 567-89</li>
+                        <li className="flex gap-5 items-center">
+                            <span>
+                                <FaMapLocationDot />
+                            </span>
+                            123 Main St, Anytown, USA</li>
                     </ul>
                 </div>
 

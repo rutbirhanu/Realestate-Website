@@ -8,6 +8,7 @@ import { HouseComponent } from "@/components/ui/HouseComponent";
 import { QuestionCardComponent } from "@/components/ui/QuestionCardComponent";
 import { ContactUsSection } from "@/components/sections/ContactUsSection";
 import { Testimonialsection } from "@/components/sections/Testimonialsection";
+import { Footer } from "@/components/layout/Footer";
 
 export default function Home() {
   return (
@@ -19,7 +20,7 @@ export default function Home() {
         <div className="flex flex-col justify-between h-screen text-white">
           <Header />
           <div className="flex flex-col my-1 mx-5">
-            <div className="flex justify-between gap-16 items-center mx-4 -mb-10">
+            <div className="flex justify-between gap-16 items-center mx-4 -mb-14">
               <h1 className="text-5xl leading-tight">
                 Find Your Dream Home with Confidence
               </h1>
@@ -102,6 +103,7 @@ export default function Home() {
           <h1 className="text-2xl font-bold text-black my-10 mx-auto text-center mt-20">Contact Us</h1>
 
         <ContactUsSection />
+        <Footer/>
 
       </div>
     </div>
