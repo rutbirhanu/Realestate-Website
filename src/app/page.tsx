@@ -81,7 +81,10 @@ export default function Home() {
         <div>
 
           <AboutSection />
-          <h1 className="text-2xl font-bold text-black mb-5 mx-auto text-center mt-20">Premium Houses</h1>
+          <div className=" mb-5 mx-auto text-center mt-20">
+            <h1 className="text-2xl font-bold text-black">Premium Houses</h1>
+            <p>“Discover handpicked luxury homes that combine elegance, comfort, and modern design — crafted to offer you the finest living experience.”</p>
+          </div>
 
           <div className="flex justify-evenly">
             <HouseComponent numberOfBedrooms={2} numberoFBathrooms={1} location="Bole ,Addis Abeba" price="138,308,0" houseType="G+2 Villa House" />
@@ -89,7 +92,11 @@ export default function Home() {
             <HouseComponent numberOfBedrooms={2} numberoFBathrooms={1} location="Bole ,Addis Abeba" price="138,308,0" houseType="G+2 Villa House" />
             <HouseComponent numberOfBedrooms={2} numberoFBathrooms={1} location="Bole ,Addis Abeba" price="138,308,0" houseType="G+2 Villa House" />
           </div>
-          <h1 className="text-2xl font-bold text-black mt-15 mb-5 mx-auto text-center ">Affordable Houses Options</h1>
+
+          <div className=" mb-5 mx-auto text-center mt-20">
+            <h1 className="text-2xl font-bold text-black ">Affordable Houses Options</h1>
+            <p className="mb-5 text-[15px]">“Find budget-friendly homes that balance quality, comfort, and value, making your dream of owning a home within reach.”</p>
+          </div>
 
           <div className="flex justify-evenly">
             <HouseComponent numberOfBedrooms={2} numberoFBathrooms={1} location="Bole ,Addis Abeba" price="138,308,0" houseType="G+2 Villa House" />
