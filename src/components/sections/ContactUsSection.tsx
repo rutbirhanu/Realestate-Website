@@ -10,10 +10,14 @@ export const ContactUsSection = () => {
                     <h2 className="font-bold text-2xl">
                         Reach out
                     </h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quisquam itaque accusamus? Doloribus repudiandae nihil perspiciatis dolore quidem illum repellendus voluptatibus itaque aperiam, nostrum tempore. Ratione repellat perspiciatis velit voluptas.</p>
+                    <p>
+                        Whether you’re looking to buy, sell, or rent a property, we’re here to guide you every step of the way.
+                        Reach out today and let’s make your real estate journey smooth and successful.
+
+                    </p>
                     <ul className="pl-5 pt-5">
                         <li className="flex gap-5 items-center"><span className="inline-block ">
-                            <MdEmail/>
+                            <MdEmail />
                         </span> info@example.com</li>
                         <li className="flex gap-5 items-center py-2"><span>
                             <FaPhoneAlt />

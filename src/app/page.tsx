@@ -9,6 +9,16 @@ import { QuestionCardComponent } from "@/components/ui/QuestionCardComponent";
 import { ContactUsSection } from "@/components/sections/ContactUsSection";
 import { Testimonialsection } from "@/components/sections/Testimonialsection";
 import { Footer } from "@/components/layout/Footer";
+import { OurTeamSection } from "@/components/sections/OurTeamSection";
+import { Playfair_Display } from "next/font/google"
+
+const playfair = Playfair_Display(
+  {
+    subsets: ['latin'],
+    weight: ['600'],
+    style: ['italic']
+  }
+)
 
 export default function Home() {
   return (
@@ -21,7 +31,7 @@ export default function Home() {
           <Header />
           <div className="flex flex-col my-1 mx-5">
             <div className="flex justify-between gap-16 items-center mx-4 -mb-14">
-              <h1 className="text-5xl leading-tight">
+              <h1 className={`text-5xl leading-tight ${playfair.className}`}>
                 Find Your Dream Home with Confidence
               </h1>
               <div>
@@ -99,11 +109,16 @@ export default function Home() {
           <QuestionCardComponent question="What is the best way to find a property?" answer="The best way to find a property is to work with a real estate agent who knows the local market." />
         </div>
 
-        <Testimonialsection/>
-          <h1 className="text-2xl font-bold text-black my-10 mx-auto text-center mt-20">Contact Us</h1>
+        <h2 className="text-center text-2xl font-bold mb-10 mt-20">
+          Our Expert Team
+        </h2>
+        <OurTeamSection />
+        <Testimonialsection />
+
+        <h1 className="text-2xl font-bold text-black my-10 mx-auto text-center mt-20">Contact Us</h1>
 
         <ContactUsSection />
-        <Footer/>
+        <Footer />
 
       </div>
     </div>

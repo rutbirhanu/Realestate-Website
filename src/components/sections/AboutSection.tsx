@@ -67,18 +67,27 @@ export default function AboutSection() {
                         />
                     </div>
 
-                    <p>
-                        Do you want me to show you the best way to make this responsive (so the house image adjusts nicely across screen sizes)?
-                    </p>
-                    <p>
-                        Do you want me to show you the best way to make this responsive (so the house image adjusts nicely across screen sizes)?
-                    </p>
+                    <p className="">
+                        At, we believe finding the perfect property should be more than just a
+                        At, we believe finding the perfect property should be more than just a
+                        At, we believe finding the perfect property should be more than just a
+                        At, we believe finding the perfect property should be more than just a
+                        transaction—it should be an experience. With years of expertise in the real estate
+                        industry, our dedicated team helps clients buy, sell, and rent properties with
+                        confidence and ease. </p>
+                    
                 </div>
 
                 <div className="flex justify-between my-5 mx-10 items-center p-5 rounded-2xl gap-20">
-                    <p>
-                        Do you want me to show you the best way to make this responsive (so the house image adjusts nicely across screen sizes)?
-                    </p>
+                    <div>
+                        <ul>
+                            <li>Integrity At, we believe finding the perfect property</li>
+                            <li>Customer First At, we believe finding the perfect property</li>
+                            <li>Innovation At, we believe finding the perfect property</li>
+                            <li>Expertise At, we believe finding the perfect property</li>
+                            <li>Commitment At, we believe finding the perfect property</li>
+                        </ul>
+                    </div>
                     <div className="w-full relative h-[160px]">
                         <Masonry
                             items={items}
@@ -92,9 +101,15 @@ export default function AboutSection() {
                             colorShiftOnHover={false}
                         />
                     </div>
-                    <p>
-                        Do you want me to show you the best way to make this responsive (so the house image adjusts nicely across screen sizes)?
-                    </p>
+                    <div>
+                        <ul>
+                            <li>Integrity Integrity</li>
+                            <li>Customer First Integrity</li>
+                            <li>Innovation Integrity</li>
+                            <li>Expertise Integrity</li>
+                            <li>Commitment Integrity</li>
+                        </ul>
+                    </div>
 
                 </div>
             </div>
