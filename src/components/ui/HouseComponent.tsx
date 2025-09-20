@@ -24,8 +24,8 @@ export const HouseComponent = ({ numberoFBathrooms, numberOfBedrooms, price, hou
                 />
             </div>
             <div className='flex px-2 gap-6 text-[13px] text-gray-500'>
-                <p className='flex gap-1 flex-col'><IoBedOutline color='brown' size={14}/>{numberOfBedrooms} Bedrooms</p>
-                <p className='flex gap-1 flex-col'><FaBath color='blue'/>{numberoFBathrooms} Bathrooms</p>
+                <p className='flex gap-1 flex-col'><IoBedOutline size={14}/>{numberOfBedrooms} Bedrooms</p>
+                <p className='flex gap-1 flex-col'><FaBath />{numberoFBathrooms} Bathrooms</p>
             </div>
             <h3 className='text-[18px] font-medium px-2'>{houseType}</h3>
             <div className='flex px-2 gap-5'>

@@ -19,7 +19,7 @@ export default function AboutSection() {
   ];
 
   return (
-    <div className="my-5 text-black mt-40">
+    <div className="mb-25 text-black mt-35">
       {/* First Section */}
       <div className="border border-gray-200 my-5 mx-10 p-5 rounded-2xl shadow-lg">
         <div className="flex flex-col lg:flex-row justify-between items-center gap-10">
@@ -50,7 +50,7 @@ export default function AboutSection() {
         <div className="flex flex-col lg:flex-row justify-evenly items-center gap-10">
           {/* Core Values */}
           <div className="lg:w-1/6 w-full">
-            <h4 className="font-semibold text-lg my-1">Core Values</h4>
+            <h4 className="font-semibold text-lg my-1 text-[#D4AF37]">Core Values</h4>
             <ul className="ml-3 space-y-2">
               <li className="flex gap-2 items-center"><FaRegCircleDot size={15} /> Integrity</li>
               <li className="flex gap-2 items-center"><FaRegCircleDot size={15} /> Customer</li>
@@ -78,7 +78,7 @@ export default function AboutSection() {
           {/* Mission + Vision */}
           <div className="lg:w-1/2 w-full flex flex-col gap-5">
             <div>
-              <h4 className="font-semibold text-lg my-1">Mission</h4>
+              <h4 className="font-semibold text-lg my-1 text-[#D4AF37]">Mission</h4>
               <p>
                 Our mission is simple: to make real estate transparent,
                 accessible, and stress-free.
@@ -86,7 +86,7 @@ export default function AboutSection() {
             </div>
 
             <div>
-              <h4 className="font-semibold text-lg my-1">Vision</h4>
+              <h4 className="font-semibold text-lg my-1 text-[#D4AF37]">Vision</h4>
               <p>
                 We aim to be the most trusted real estate partner in the region,
                 known for integrity, innovation, and exceptional service that

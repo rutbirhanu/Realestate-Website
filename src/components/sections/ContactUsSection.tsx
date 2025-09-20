@@ -73,7 +73,7 @@ export const ContactUsSection = () => {
                             {/* Button */}
                             <button
                                 type="submit"
-                                className="bg-yellow-500 text-white px-4 py-2 rounded-3xl mt-6 w-full sm:w-auto"
+                                className="bg-[#0A1D37] text-white px-4 py-2 rounded-3xl mt-6 w-full sm:w-auto"
                             >
                                 Send Message
                             </button>

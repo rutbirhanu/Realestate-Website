@@ -43,7 +43,7 @@ export const Testimonialsection = () => {
 
     return (
         <section className="py-16 bg-gray-100 overflow-hidden">
-            <h2 className="text-center text-3xl font-bold mb-10">
+            <h2 className="text-center text-3xl font-bold mb-10 text-[#014421]">
                 What Our Clients Say
             </h2>
 
