@@ -117,11 +117,20 @@ export default function Home() {
 
         <h1 className="text-3xl font-bold text-[#014421] my-10 mx-auto text-center mt-20">Frequently Asked Questions</h1>
         <div className="w-3/4 flex flex-col mx-auto my-10">
-          <QuestionCardComponent question="What is the best way to find a property?" answer="The best way to find a property is to work with a real estate agent who knows the local market." />
-          <QuestionCardComponent question="What is the best way to find a property?" answer="The best way to find a property is to work with a real estate agent who knows the local market." />
-          <QuestionCardComponent question="What is the best way to find a property?" answer="The best way to find a property is to work with a real estate agent who knows the local market." />
-          <QuestionCardComponent question="What is the best way to find a property?" answer="The best way to find a property is to work with a real estate agent who knows the local market." />
-          <QuestionCardComponent question="What is the best way to find a property?" answer="The best way to find a property is to work with a real estate agent who knows the local market." />
+          <QuestionCardComponent question="How can I know if a property fits my budget?"
+            answer="Our agents will assess your budget and financing options, and recommend properties that best match your requirements." />
+
+          <QuestionCardComponent question="How do I start the process of buying a home?"
+            answer="You can start by browsing our listed properties, scheduling a viewing, and speaking with one of our agents who will guide you through financing and paperwork." />
+
+          <QuestionCardComponent question="Can you help me sell my property?"
+            answer="Yes, we provide professional property valuation, marketing, and negotiations to help you sell your property at the best price." />
+
+          <QuestionCardComponent question="Is property management available for overseas owners?"
+            answer="Yes, we offer full property management services, including rent collection, maintenance, and tenant support, even if you live abroad." />
+
+          <QuestionCardComponent question="Do you offer rental property services?"
+            answer="Absolutely! We have a wide selection of rental properties and also assist landlords with tenant placement and property management." />
         </div>
 
         <h2 className="text-center text-2xl font-bold mb-10 mt-20 text-[#014421]">

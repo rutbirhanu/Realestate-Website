@@ -101,8 +101,8 @@ export const OurTeamSection = () => {
                         <div
                             key={index}
                             className={`w-16 h-16 sm:w-20 sm:h-20 rounded-full overflow-hidden cursor-pointer border-2 transition ${index === currentIndex
-                                    ? "border-yellow-400 scale-110"
-                                    : "border-transparent hover:scale-105"
+                                ? "border-yellow-400 scale-110"
+                                : "border-transparent hover:scale-105"
                                 }`}
                             onClick={() => setCurrentIndex(index)}
                         >
