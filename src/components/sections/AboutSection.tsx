@@ -20,10 +20,8 @@ export default function AboutSection() {
 
   return (
     <div className="mb-25 text-black mt-35">
-      {/* First Section */}
       <div className="border border-gray-200 my-5 mx-10 p-5 rounded-2xl shadow-lg">
         <div className="flex flex-col lg:flex-row justify-between items-center gap-10">
-          {/* Masonry Left */}
           <div className="lg:w-1/3 w-full h-[200px] relative">
             <Masonry
               items={items}
@@ -48,7 +46,6 @@ export default function AboutSection() {
         </div>
      
         <div className="flex flex-col lg:flex-row justify-evenly items-center gap-10">
-          {/* Core Values */}
           <div className="lg:w-1/6 w-full">
             <h4 className="font-semibold text-lg my-1 text-[#D4AF37]">Core Values</h4>
             <ul className="ml-3 space-y-2">
@@ -60,7 +57,6 @@ export default function AboutSection() {
             </ul>
           </div>
 
-          {/* Masonry Middle */}
           <div className="lg:w-1/2 w-full h-[200px] relative">
             <Masonry
               items={items}
