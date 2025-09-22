@@ -17,7 +17,7 @@ export const HouseComponent = ({ numberoFBathrooms, numberOfBedrooms, price, hou
         <div className='px-1 py-1 text-black flex flex-col justify-between gap-[5px]'>
             <div className="w-60 h-65 rounded-bl-2xl rounded-tr-2xl overflow-hidden relative mb-2">
                 <Image
-                    src={house_1}
+                    src={image}
                     alt="house image"
                     fill
                     className="object-cover"

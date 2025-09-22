@@ -1,11 +1,8 @@
+'use client';
 import { StatsComponent } from "../ui/StatsComponent";
-import g1_house from '../../../public/g1_house.jpg'
-import apartment from '../../../public/apartment.jpg'
-import penthouse_1 from "../../../public/penthouse_1.webp"
-import small_villa from '../../../public/small_villa.webp'
-import Image from "next/image";
 import Masonry from '../ui/MasonryComponent'
 import { FaRegCircleDot } from "react-icons/fa6";
+import { useEffect, useState } from "react";
 
 
 export default function AboutSection() {
@@ -14,9 +11,20 @@ export default function AboutSection() {
     { id: "2", img: "/apartment.jpg", url: "#", height: 130 },
     { id: "3", img: "/penthouse_1.webp", url: "#", height: 180 },
     { id: "4", img: "/small_villa.webp", url: "#", height: 300 },
-    { id: "5", img: "https://picsum.photos/id/1011/600/750?grayscale", url: "#", height: 170 },
-    { id: "6", img: "https://picsum.photos/id/1020/600/800?grayscale", url: "#", height: 120 },
+    { id: "5", img: "/studio.jpeg", url: "#", height: 170 },
+    { id: "6", img: "/small_house_2.jpg", url: "#", height: 120 },
   ];
+
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth < 1000); 
+    handleResize(); 
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  const displayItems = isMobile ? [items[1], items[2]] : items; 
 
   return (
     <div className="mb-25 text-black mt-35">
@@ -24,7 +32,7 @@ export default function AboutSection() {
         <div className="flex flex-col lg:flex-row justify-between items-center gap-10">
           <div className="lg:w-1/3 w-full h-[200px] relative">
             <Masonry
-              items={items}
+              items={displayItems}
               ease="power3.out"
               duration={0.6}
               stagger={0.05}
@@ -36,7 +44,6 @@ export default function AboutSection() {
             />
           </div>
 
-          {/* Text Right */}
           <p className="lg:w-1/2 w-full">
             We believe finding the perfect property should be more than just a
             transaction—it should be an experience. With years of expertise in
@@ -44,8 +51,8 @@ export default function AboutSection() {
             and rent properties with confidence and ease.
           </p>
         </div>
-     
-        <div className="flex flex-col lg:flex-row justify-evenly items-center gap-10">
+
+        <div className="flex flex-col lg:flex-row justify-evenly items-center gap-10 mt-10">
           <div className="lg:w-1/6 w-full">
             <h4 className="font-semibold text-lg my-1 text-[#D4AF37]">Core Values</h4>
             <ul className="ml-3 space-y-2">
@@ -59,7 +66,7 @@ export default function AboutSection() {
 
           <div className="lg:w-1/2 w-full h-[200px] relative">
             <Masonry
-              items={items}
+              items={displayItems}
               ease="power3.out"
               duration={0.6}
               stagger={0.05}
@@ -71,7 +78,6 @@ export default function AboutSection() {
             />
           </div>
 
-          {/* Mission + Vision */}
           <div className="lg:w-1/2 w-full flex flex-col gap-5">
             <div>
               <h4 className="font-semibold text-lg my-1 text-[#D4AF37]">Mission</h4>
@@ -80,7 +86,6 @@ export default function AboutSection() {
                 accessible, and stress-free.
               </p>
             </div>
-
             <div>
               <h4 className="font-semibold text-lg my-1 text-[#D4AF37]">Vision</h4>
               <p>

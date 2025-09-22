@@ -85,32 +85,31 @@ export default function Home() {
           </div>
         </div>
 
-
         <div>
 
           <AboutSection />
           <div className=" mb-5 mx-auto text-center mt-20">
             <h1 className="text-2xl font-bold text-[#014421]">Premium Houses</h1>
-            <p>“Discover handpicked luxury homes that combine elegance, comfort, and modern design — crafted to offer you the finest living experience.”</p>
+            <p className="mb-5 text-sm text-gray-500">“Discover handpicked luxury homes that combine elegance, comfort, and modern design — crafted to offer you the finest living experience.”</p>
           </div>
 
-          <div className="flex justify-evenly">
-            <HouseComponent numberOfBedrooms={2} numberoFBathrooms={1} location="Bole ,Addis Abeba" price="138,308,0" houseType="G+2 Villa House" />
-            <HouseComponent numberOfBedrooms={2} numberoFBathrooms={1} location="Bole ,Addis Abeba" price="138,308,0" houseType="G+2 Villa House" />
-            <HouseComponent numberOfBedrooms={2} numberoFBathrooms={1} location="Bole ,Addis Abeba" price="138,308,0" houseType="G+2 Villa House" />
-            <HouseComponent numberOfBedrooms={2} numberoFBathrooms={1} location="Bole ,Addis Abeba" price="138,308,0" houseType="G+2 Villa House" />
+          <div className="flex justify-evenly overflow-x-scroll gap-5">
+            <HouseComponent numberOfBedrooms={2} numberoFBathrooms={1} location="Bole ,Addis Abeba" price="1,038,308,0" houseType="Apartment" image="/apartment.jpg" />
+            <HouseComponent numberOfBedrooms={3} numberoFBathrooms={2} location="Beverly Hills, USA" price="236,009,0" houseType="G+1 Villa House" image="/g1_house.jpg" />
+            <HouseComponent numberOfBedrooms={4} numberoFBathrooms={3} location="Toronto, Canada" price="138,308,0" houseType="G+1 Villa House" image="/house_1.webp" />
+            <HouseComponent numberOfBedrooms={1} numberoFBathrooms={1} location="Dubai Marina, UAE" price="98,308,0" houseType="Pent House" image="/penthouse_1.webp" />
           </div>
 
           <div className=" mb-5 mx-auto text-center mt-20">
             <h1 className="text-2xl font-bold text-[#014421]">Affordable Houses Options</h1>
-            <p className="mb-5 text-[15px]">“Find budget-friendly homes that balance quality, comfort, and value, making your dream of owning a home within reach.”</p>
+            <p className="mb-5 text-sm text-gray-500">“Find budget-friendly homes that balance quality, comfort, and value, making your dream of owning a home within reach.”</p>
           </div>
 
-          <div className="flex justify-evenly">
-            <HouseComponent numberOfBedrooms={2} numberoFBathrooms={1} location="Bole ,Addis Abeba" price="138,308,0" houseType="G+2 Villa House" />
-            <HouseComponent numberOfBedrooms={2} numberoFBathrooms={1} location="Bole ,Addis Abeba" price="138,308,0" houseType="G+2 Villa House" />
-            <HouseComponent numberOfBedrooms={2} numberoFBathrooms={1} location="Bole ,Addis Abeba" price="138,308,0" houseType="G+2 Villa House" />
-            <HouseComponent numberOfBedrooms={2} numberoFBathrooms={1} location="Bole ,Addis Abeba" price="138,308,0" houseType="G+2 Villa House" />
+          <div className="flex justify-evenly overflow-x-scroll gap-5">
+            <HouseComponent numberOfBedrooms={6} numberoFBathrooms={4} location="Phuket, Thailand" price="902,343,0" houseType="Luxuarious G+2 House" image="/modern_house.webp" />
+            <HouseComponent numberOfBedrooms={2} numberoFBathrooms={2} location="Summit ,Addis Abeba" price="138,308,0" houseType="Modern Villa House" image="/small_villa.webp" />
+            <HouseComponent numberOfBedrooms={1} numberoFBathrooms={1} location="Sydney, Australia" price="98,308,0" houseType="G+2 Villa House" image="/studio.jpeg" />
+            <HouseComponent numberOfBedrooms={2} numberoFBathrooms={1} location="London, UK" price="199,987,0" houseType="Town House" image="/small_house_2.jpg" />
           </div>
 
         </div>
