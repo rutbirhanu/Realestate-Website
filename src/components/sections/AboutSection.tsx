@@ -24,7 +24,7 @@ export default function AboutSection() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  const displayItems = isMobile ? [items[1], items[2]] : items; 
+  const displayItems = isMobile ? [items[1], items[2],items[3],items[4]] : items; 
 
   return (
     <div className="mb-25 text-black mt-35">
