@@ -18,13 +18,13 @@ export default function AboutSection() {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    const handleResize = () => setIsMobile(window.innerWidth < 1000); 
-    handleResize(); 
+    const handleResize = () => setIsMobile(window.innerWidth < 1000);
+    handleResize();
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  const displayItems = isMobile ? [items[1], items[2],items[3],items[4]] : items; 
+  const displayItems = isMobile ? [items[1], items[2], items[3], items[4]] : items;
 
   return (
     <div className="mb-25 text-black mt-35">
