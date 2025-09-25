@@ -27,7 +27,7 @@ export default function AboutSection() {
   const displayItems = isMobile ? [items[1], items[2], items[3], items[4]] : items;
 
   return (
-    <div className="mb-25 text-black mt-35">
+    <div id="about-us" className="mb-25 text-black mt-35">
       <div className="border border-gray-200 my-5 mx-10 p-5 rounded-2xl shadow-lg">
         <div className="flex flex-col lg:flex-row justify-between items-center gap-10">
           <div className="lg:w-1/3 w-full h-[200px] relative">

@@ -59,7 +59,7 @@ export const OurTeamSection = () => {
     };
 
     return (
-        <div className="mb-20 px-6 sm:px-10 flex flex-col lg:flex-row gap-10 lg:gap-20 justify-center items-center relative text-white">
+        <div id="team" className="mb-20 px-6 sm:px-10 flex flex-col lg:flex-row gap-10 lg:gap-20 justify-center items-center relative text-white">
 
             {/* Left Card */}
             <div className="bg-[#014421] w-full lg:w-1/3 rounded-xl p-6 flex flex-col items-center gap-6">

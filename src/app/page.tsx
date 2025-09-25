@@ -88,7 +88,7 @@ export default function Home() {
         <div>
 
           <AboutSection />
-          <div className=" mb-5 mx-auto text-center mt-20">
+          <div id="property-list" className=" mb-5 mx-auto text-center mt-20">
             <h1 className="text-2xl font-bold text-[#014421]">Premium Houses</h1>
             <p className="mb-5 text-sm text-gray-500">“Discover handpicked luxury homes that combine elegance, comfort, and modern design — crafted to offer you the finest living experience.”</p>
           </div>

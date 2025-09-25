@@ -4,7 +4,7 @@ import { MdEmail } from "react-icons/md"
 
 export const ContactUsSection = () => {
     return (
-        <div className="text-black mx-10 md:mx-10 my-5 p-5 border-2 border-gray-100 rounded-2xl">
+        <div id="contact-us" className="text-black mx-10 md:mx-10 my-5 p-5 border-2 border-gray-100 rounded-2xl">
             <div className="flex flex-col md:flex-row justify-evenly gap-10">
                 {/* Left Side - Contact Info */}
                 <div className="flex flex-col gap-4 md:w-1/3">
